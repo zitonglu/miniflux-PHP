@@ -1,0 +1,48 @@
+body {
+  font-family: @fontBody;
+  font-size: 21px;
+  line-height: 1.65;
+  color: @color;
+  background-color: @bg;
+  padding-top: @nav;
+}
+
+a {
+  color: @link;
+  text-decoration: none;
+  border-bottom: 1px solid @link;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: darken(@color, 20%) !important;
+    border-bottom-color: darken(@color, 20%) !important;
+  }
+}
+
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-family: @fontAlternative;
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 48px;
+
+  a {
+    color: @color;
+    border-bottom-width: 0;
+  }
+}
+
+.item {
+  padding-right: @unit * 4;
+
+  h1 {
+    width: @width + @expand;
+  }
+}
+
+.hide-desktop {
+  display: none;
+}

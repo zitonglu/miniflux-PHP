@@ -1,0 +1,7 @@
+{
+  "name": "miniflux-theme-read",
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

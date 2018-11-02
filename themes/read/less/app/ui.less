@@ -1,0 +1,185 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @nav;
+  background-color: darken(@color, 10%);
+  overflow: hidden;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    line-height: @nav;
+    padding: 0 @unit;
+    border-bottom-width: 0;
+    color: mix(@bg, @color, 75%);
+
+    &:hover {
+      color: @bg !important;
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: 0;
+    right: @unit / 2;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        line-height: @nav;
+        padding: 0 ( @unit / 2 );
+        color: mix(@bg, @color, 50%);
+
+        &:hover {
+          color: @bg !important;
+        }
+      }
+    }
+  }
+
+  #nav-counter {
+    color: @bg;
+    margin-left: @unit / 4;
+  }
+}
+
+.page {
+  margin-left: @unit * 4;
+}
+
+nav.top,
+nav.bottom {
+  width: @width;
+  margin: @unit 0;
+  color: lighten(@color, 50%);
+
+  a {
+    color: lighten(@color, 30%);
+    border-bottom-color: lighten(@color, 30%);
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
+
+.page-header ul,
+.item-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+  overflow: hidden;
+
+  li {
+    float: left;
+    margin-right: @unit;
+
+    &.active a {
+      color: @color;
+      border-bottom-width: 0;
+    }
+  }
+}
+
+.item-menu {
+  font-size: 16px;
+}
+
+nav.bottom {
+  padding-bottom: @unit * 2;
+}
+
+.item-infos {
+  font-size: 16px;
+  margin: @unit 0 ( @unit * 2 ) 0;
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+  overflow: hidden;
+  color: lighten(@color, 30%);
+
+  li {
+    float: left;
+    margin-right: @unit / 2;
+
+    a {
+      color: lighten(@color, 30%);
+      border-bottom-color: lighten(@color, 30%);
+
+      &.bookmark-icon {
+        font-size: 24px;
+        border-bottom-width: 0;
+        margin-left: -10px;
+      }
+    }
+
+    &:before {
+      content: '-';
+      padding-right: @unit / 2;
+    }
+    &:first-child:before {
+      content: ' ';
+    }
+  }
+}
+
+#page-counter {
+  color: lighten(@color, 20%);
+  margin-left: @unit;
+}
+
+.items {
+
+  .preview {
+    width: @width;
+    margin: @unit 0 ( @unit / 4 ) 0;
+  }
+
+  h2 {
+    width: @width + @expand;
+    font-family: @fontAlternative;
+    font-weight: 300;
+    line-height: 1.25;
+    font-size: 38px;
+    margin: ( @unit * 2 ) 0 0 0;
+
+    a {
+      color: @color;
+      border-bottom-width: 0;
+    }
+
+    .bookmark-icon,
+    .read-icon {
+      display: none;
+    }
+  }
+}
+
+#bottom-menu {
+  margin: ( @unit * 2 ) 0;
+}
+#items-paging {
+  margin: ( @unit * 2 ) 0;
+}
+
+.page-header {
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 26px;
+  }
+}
