@@ -1,0 +1,1364 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.2; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  overflow-x: scroll;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+  font-size: 14px;
+  color: #263238;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.2; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* Animations
+   ========================================================================== */
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/* Font
+   ========================================================================== */
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?23663536');
+    src: url('../fonts/fontello.eot?23663536#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff?23663536') format('woff'),
+        url('../fonts/fontello.ttf?23663536') format('truetype'),
+        url('../fonts/fontello.svg?23663536#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #00897b;
+}
+
+a:hover {
+    color: #263238;
+}
+
+/* Miniflux
+   ========================================================================== */
+.hide, .hide-mobile {
+    display: none;
+}
+
+/*
+animation-name: blinker;
+animation-duration: 500ms;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+*/
+
+/* Shared
+   ========================================================================== */
+header nav,
+.page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 15px 15px 5px 15px;
+}
+
+.page {
+    padding: 0;
+}
+
+header nav ul li a #nav-counter, 
+.page-header h2 #page-counter {
+    vertical-align: super;
+    padding-left: 5px;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+header nav ul li,
+.page .menu-more li,
+.page-header li {
+    padding: 0;
+    margin-left: 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+/* Header
+   ========================================================================== */
+ header {
+     background: #00897b;
+ }
+ 
+    header nav {
+        
+    }
+    
+        header a.logo {
+            float: left;
+            color: #263238;
+            font-size: 25px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+            header a.logo span {
+                color: #fff;
+            }
+            
+        header nav ul {
+           margin: 11px 0 0 0;
+           text-align: right;
+        }
+        
+            header nav ul li {
+                margin-bottom: 10px;
+            }
+            
+            header nav ul li.active {
+
+            }
+            
+                header nav ul li a {
+                    color: #b2dfdb;
+                    padding: 3px 0;
+                }               
+                
+                header nav ul li a:hover,
+                header nav ul li.active a {
+                    color: #fff;
+                }
+                    
+                    header nav ul li a #nav-counter {
+
+                    }
+
+/* Page + header
+   ========================================================================== */
+.page {
+    
+}
+
+    .page .menu-more {
+        background: #00897b;
+        margin: -30px -15px 0 -15px;
+    }
+    
+        .page .menu-more ul {
+            margin: 0;
+            padding: 0;      
+        }
+        
+            .page .menu-more li {
+                margin: 0;
+                display: block;
+                border-top: 1px solid #b2dfdb;
+            }
+            
+                .page .menu-more li a {
+                    color: #b2dfdb;
+                    display: block;
+                    padding: 15px 10px;
+                }
+                
+                .page .menu-more li a:hover {
+                    color: #fff;
+                }
+
+    .page .search {
+        padding: 25px 15px 0 15px;
+    }
+    
+        #search-opener {
+            display: none;
+        }
+        
+        #search-form.hide {
+            display: block;
+        }
+        
+            #search-form #form-action {
+                
+            }
+            
+            #search-form #form-text {
+                width: 100%;
+                padding: 10px 15px;
+                box-sizing: border-box;
+            }
+    
+    .page-header {
+        
+    }
+    
+        .page-header h2 {
+            margin: 20px 0 0 0;
+            padding: 0 15px 18px 15px;
+            font-weight: normal;
+            font-size: 25px;
+            border-bottom: 1px solid #00897b;
+        }
+        
+            .page-header h2 #page-counter {
+               
+            }
+            
+        .page-header ul {
+            margin: 15px 15px 0 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: right;
+        }
+        
+            .page-header li {
+                margin-bottom: 11px;
+            }
+            
+                .page-header li a {
+                    padding: 3px 0;
+                }
+            
+        .page-header nav {
+            float: left;
+            text-align: left;
+            overflow: hidden;
+        }
+        
+            .page-header nav #grouplist {
+                margin: 15px 0 0 15px;
+            }
+            
+                .page-header nav #grouplist li {
+                    margin-left: 0;
+                    margin-right: 15px;
+                }
+            
+                    .page-header nav #grouplist li a {
+                
+                    }
+                    
+    .alert {
+        
+    }
+    
+        .alert a {
+            
+        }
+        
+        .alert a:hover {
+            
+        }
+    
+        .alert-info {
+            
+        }
+
+/* Items
+   ========================================================================== */
+.items {
+    margin-top: 3px;
+    border-top: 1px solid #00897b;
+}
+
+    .items article {
+        padding: 22px 15px 25px 15px;
+        margin: 0;
+        border-bottom: 1px solid #b2dfdb;
+    }
+    
+    section[data-item-page="feeds"] article {
+        
+    }
+
+        .items h2 {
+            font-weight: normal;
+            font-size: 18px;
+            position: relative;
+            margin: 0 0 15px 0;
+            line-height: 1.3;
+        }
+        
+        .items h2.loading-icon {
+
+        }
+        
+            .items h2 .item-icons {
+                display: block;
+                float: right;
+                position: relative;
+                font-size: 20px;
+                top: -1px;
+            }
+            
+                .items h2 .item-icons span,
+                .item .item-infos span {
+                    cursor: pointer;
+                    color: #00897b;
+                    margin-left: 10px;
+                    
+                    font-family: "fontello";
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    text-decoration: inherit;
+                    width: 1em;
+                    margin-right: .2em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1em;
+                    
+                    /* Animation center compensation - margins should be symmetric */
+                    /* remove if not needed 
+                    margin-left: .2em;
+                    */
+                    /* You can be more comfortable with increased icons size */
+                    /* font-size: 120%; */
+                    
+                    /* Font smoothing. That was taken from TWBS */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    
+                    /* Uncomment for 3D effect */
+                    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+                }
+                
+                .items h2 .item-icons span:hover,
+                .item .item-infos span:hover {
+                    color: #333;
+                }
+            
+                .items h2 .items-count:before {
+                    content: '(';
+                }
+                
+                .items h2 .items-count {
+
+                }
+                
+                .items h2.loading-icon .items-count {
+
+                }
+                
+                .items h2 .items-count:after {
+                    content: ')';
+                }
+                
+                .items h2 .feed-last-checked {
+
+                }
+                
+                .items h2 .feed-parsing-error {
+
+                }
+            
+                .items h2 .item-icons .bookmark-icon {
+                    position: relative;
+                }
+                
+                .items h2 .item-icons .bookmark-icon:hover {
+                 
+                }
+                
+                article[data-item-bookmark="0"] .bookmark-icon::before {
+                    content: "\e80C";
+                }
+
+                article[data-item-bookmark="1"] .bookmark-icon::before {
+                    content: "\e80B";
+                }
+                
+                .items h2 .item-icons .read-icon {
+                   
+                }
+                
+                .items h2 .item-icons .read-icon:hover {
+                   
+                }
+                
+                article[data-item-status="read"] .read-icon:before {
+                    content: "\e809";
+
+                }
+
+                article[data-item-status="unread"] .read-icon:before {
+                    content: "\e808";
+                }
+                
+            .items h2 .item-title {
+                word-wrap: break-word;
+            }
+            
+                .items h2 .item-title .show {
+
+                }
+                
+        .item .item-infos {
+  
+        }
+        
+            .item .item-infos li {
+               
+            }
+                
+        .items .item-menu {
+            margin: 0 0 15px 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+            .items .item-menu li {
+                margin: 0;
+                padding: 0 15px 0 0;
+                box-sizing: border-box;
+                list-style: none;
+                float: left;
+            }
+            
+            
+                .items .item-menu li a {
+
+                }
+                
+                .items .item-menu li span {
+
+                }
+                
+                .items .item-menu li .original {
+                    
+                }
+                
+                .items .item-menu li .video-enclosure {
+                    
+                }
+                
+                .items .item-menu li .delete {
+                    
+                }
+                
+        .items .preview {
+            word-wrap: break-word;
+            margin: 0;
+            line-height: 1.3;
+        }
+        
+        .items .preview:empty {
+        
+        }
+        
+    #bottom-menu {
+        padding: 15px;
+        text-align: right;
+    }
+        
+        #bottom-menu a {
+            
+        }
+        
+    #items-paging {
+        
+    }
+        
+/* Help
+   ========================================================================== */
+#help-layer {
+
+}
+
+    #help-layer .btn-close {
+
+    }
+    
+    #help-layer .btn-close:hover {
+      
+    }
+    
+    #help-layer section {
+        
+    }
+    
+        #help-layer #shortcuts {
+          
+        }
+        
+            #help-layer #shortcuts h3 {
+               
+            }
+            
+            #help-layer #shortcuts ul {
+            
+            }
+        
+                #help-layer #shortcuts ul li {
+              
+                }
+                
+                    #help-layer #shortcuts ul li strong {
+                     
+                    }
+    
+/* Config Form
+   ========================================================================== */
+section[data-item-page="config"] {
+    
+} 
+
+#config-form {
+  
+}
+
+    #config-form h3 {
+       
+    }
+    
+    #config-form .options {
+       
+    }
+    
+        #config-form .options label {
+           
+        }
+        
+        #config-form .options .form-help {
+           
+        }
+        
+            #config-form .options label input {
+               
+            }
+            
+                #config-form .options label input span {
+            
+                }
+        
+        #config-form .options input[type=text],
+        #config-form .options input[type=password],
+            #config-form .options input[type=number] {
+           
+        }
+        
+        #config-form .options select {
+            
+        }
+        
+    #config-form .form-actions {
+      
+    }
+    
+        #config-form .form-actions input {
+                
+        }
+
+section[data-item-page="config"] .page-section {
+    
+}
+
+    section[data-item-page="config"] .page-section h2 {
+    
+    }
+    
+section[data-item-page="config"] .panel {
+    
+} 
+
+    section[data-item-page="config"] .panel ul {
+      
+    }    
+    
+        section[data-item-page="config"] .panel ul li {
+     
+        }
+        
+            section[data-item-page="config"] .panel ul li a {
+                
+            }
+
+/* Subscription form
+   ========================================================================== */
+section[data-item-page="feeds"] form {
+  
+}
+
+    section[data-item-page="feeds"] form br {
+      
+    }
+
+    section[data-item-page="feeds"] form label {
+       
+    }
+    
+        section[data-item-page="feeds"] form label input {
+          
+        }
+        
+            section[data-item-page="feeds"] form label input span {
+                
+            }
+    
+    section[data-item-page="feeds"] form input[type=text] {
+     
+    }
+    
+    section[data-item-page="feeds"] form #grouplist {
+      
+    }
+    
+        section[data-item-page="feeds"] form #grouplist label {
+           
+        }
+        
+            section[data-item-page="feeds"] form #grouplist label input {
+            }
+            
+            section[data-item-page="feeds"] form #grouplist label input span {
+                
+            }
+            
+        section[data-item-page="feeds"] form #grouplist input {
+           
+        }
+            
+        section[data-item-page="feeds"] form #grouplist #form-create_group {
+            
+        }
+        
+    section[data-item-page="feeds"] form .form-actions {
+       
+    }
+    
+        section[data-item-page="feeds"] form .form-actions button {
+            
+        }
+        
+        section[data-item-page="feeds"] form .form-actions a {
+            
+        }
+
+section[data-item-page="feeds"] .form-actions {
+        
+}
+
+    section[data-item-page="feeds"] .form-actions a {
+        
+    }
+    
+    
+
+/* Desktop design
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .items h2 {
+
+    }
+
+    .search {
+
+    }
+}
+
+/* Mobile design
+   ========================================================================== */
+@media only screen and (max-width: 479px) {
+       
+    .page {
+
+    }
+        
+        .page .search {
+         
+        }
+            
+            #search-form {
+               
+            }
+            
+                #search-form #form-action {
+                    
+                }
+                
+                #search-form #form-text {
+                   
+                }
+                
+        .page-header h2 {
+
+        }
+        
+    .items {
+        
+    }
+    
+        .items article {
+        }
+        
+            .items h2 {
+              
+            }
+            
+            .items h2.loading-icon:before {
+               
+                
+            }
+                
+                .items h2 .item-icons {
+                  
+                }
+                
+                    .items h2 .item-icons span {
+                       
+                    }
+                
+                    .items h2 .item-icons .read-icon {
+                        
+                    }
+                    
+                    .items h2 .item-icons .bookmark-icon {
+
+                    }
+
+                .item-title {
+                   
+                
+                }
+                
+            .items .item-menu {
+               
+            }
+            
+                .items .item-menu li {
+                    max-width: 33.33%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            
+                .items .item-menu li.hide-mobile {
+                    
+                }
+                
+                    .items .item-menu li a {
+                       
+                    }
+            
+            .items .preview {
+                
+            }
+    
+    
+
+    body {
+       
+    }
+ 
+    section[data-item-page="config"] {
+    
+    } 
+
+    #config-form {
+        
+    }
+
+        #config-form h3 {
+           
+        }
+        
+        #config-form .options {
+            
+        }
+        
+            #config-form .options label {
+            
+            }
+            
+            #config-form .options .form-help {
+            
+            }
+            
+                #config-form .options label input {
+                  
+                }
+                
+                    #config-form .options label input span {
+                
+                    }
+            
+            #config-form .options input[type=text],
+            #config-form .options input[type=password],
+            #config-form .options input[type=number] {
+              
+            }
+            
+            #config-form .options select {
+                
+            }
+            
+        #config-form .form-actions {
+         
+        }
+        
+            #config-form .form-actions input {
+                    
+            }
+
+    section[data-item-page="config"] .page-section {
+        
+    }
+
+        section[data-item-page="config"] .page-section h2 {
+         
+        }
+        
+    section[data-item-page="config"] .panel {
+        
+    } 
+
+        section[data-item-page="config"] .panel ul {
+         
+        }    
+        
+            section[data-item-page="config"] .panel ul li {
+               
+            }
+            
+                section[data-item-page="config"] .panel ul li a {
+                    
+                }
+                
+    section[data-item-page="feeds"] form {
+      
+    }
+
+        section[data-item-page="feeds"] form br {
+        }
+
+        section[data-item-page="feeds"] form label {
+           
+        }
+        
+            section[data-item-page="feeds"] form label input {
+                
+            }
+            
+                section[data-item-page="feeds"] form label input span {
+                    
+                }
+        
+        section[data-item-page="feeds"] form input[type=text] {
+            
+        }
+        
+        section[data-item-page="feeds"] form #grouplist {
+            
+        }
+        
+            section[data-item-page="feeds"] form #grouplist label {
+             
+            }
+            
+                section[data-item-page="feeds"] form #grouplist label input {
+                }
+                
+                section[data-item-page="feeds"] form #grouplist label input span {
+                    
+                }
+                
+            section[data-item-page="feeds"] form #grouplist input {
+            
+            }
+                
+            section[data-item-page="feeds"] form #grouplist #form-create_group {
+                
+            }
+            
+        section[data-item-page="feeds"] form .form-actions {
+        
+        }
+        
+            section[data-item-page="feeds"] form .form-actions button {
+                
+            }
+            
+            section[data-item-page="feeds"] form .form-actions a {
+                
+            }
+
+    section[data-item-page="feeds"] .form-actions {
+            
+    }
+
+        section[data-item-page="feeds"] .form-actions a {
+            
+        }
+    
+}

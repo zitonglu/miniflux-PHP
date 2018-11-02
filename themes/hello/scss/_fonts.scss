@@ -1,0 +1,31 @@
+%title {
+	font-family: $ui-font-highlight;
+	font-weight: 700;
+	font-size: $ui-font-title-size;	
+}
+
+%paragraph {
+	font: {
+		family: $ui-font-content;
+		size: $ui-font-content-size;
+	}
+}
+
+%ul {
+	list-style: square;
+	margin-left: 30px;
+	margin-right: 10px;	
+}
+
+%li {
+	margin: 5px 0 ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 10px;
+	@extend strong;
+}
+
+strong {
+	font-weight: 700;
+}
